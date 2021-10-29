@@ -1,6 +1,5 @@
 from ConstroiFlor import ConstroiFlor
-
-
+"""Classe para exemplificar o uso de with."""
 class Flor:
     def __init__(self, arquivo):
         with ConstroiFlor(arquivo) as file:
@@ -13,4 +12,4 @@ class Flor:
         return True
 
     def __str__(self):
-        return "FLOR: " + self.nome + " COR: " + self.cor + " TOTAL DE PETALAS: " + self.nro_petalas
+        return "DESCRIÇÃOn\n" + "FLOR: " + self.nome + " COR: " + self.cor + " TOTAL DE PETALAS: " + self.nro_petalas
